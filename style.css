@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+#loading{
+    position: fixed;
+    background: #fff url('https://cdn.dribbble.com/users/107759/screenshots/2436386/media/9a15f02d7c68adaf9af951c97615076f.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999999;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+/* navigation */
+
+header{
+    position: sticky;
+    top: 0;
+    height: 80px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1em;
+    z-index: 9999;
+}
+
+nav{
+    transform: translateX(0%);
+}
+
+nav ul{
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+    margin: 0 1em;
+}
+
+nav ul li a{
+    color: #fff;
+    position: relative;
+    font-family: 'Poppins',sans-serif;
+}
+
+.logo{
+    color: #fff;
+    font-family: 'Bungee Shade', cursive;
+    font-size: 1.7rem;
+}
+
+.menu, .close{
+    color: #fff;
+    font-size: 1.8rem;
+    display: none;
+}
+
+.close{
+    position: absolute;
+    top: 2em;
+    right: 2em;
+    animation: anime 2s forwards;
+}
+
+nav ul li a:after{
+    content: "";
+    background-color: #fff;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s ease;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+    cursor: pointer;
+}
+
+@keyframes anime {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+/* navigation */
+
+/* hero section */
+.hero_container{
+    width: 100%;
+    height: calc(100vh - 70px);
+    position: relative;
+}
+
+.hero_content img{
+    width: 100%;
+    height: calc(100vh - 70px);
+}
+
+.content{
+    position: absolute;
+    width: 100%;
+    bottom: 50px;
+    text-align: center;
+}
+
+.img_title,.img_subtitle{
+    color: #fff;
+    width: fit-content;
+    padding: 5px;
+}
+
+.img_title{
+    font-size: 2.125rem;
+    font-family: 'Poppins',sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.8rem;
+    /* background: rgb(211, 33, 33,0.5); */
+}
+
+.img_subtitle{
+    font-size: 1.3125rem;
+    font-weight: 100;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgba(153, 170, 168, 0.589);
+    letter-spacing: 1px;
+}
+
+/* hero section */
+
+/* main section */
+section{
+    width: 65%;
+    margin: 6rem auto;
+}
+
+.mainContent h1{
+    font-family: 'Poppins',sans-serif;
+    letter-spacing: 0.1em;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.gray{
+    margin: 0.7rem 0 1rem 0;
+    font-family: 'Open Sans', sans-serif;
+    color: gray;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.desc{
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1.5em;
+}
+
+.singers{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, 250px);
+    grid-gap: 2em;
+    justify-content: center;
+}
+
+.singers .singer img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin: 1em 0 0 0;
+    transition: all 0.5s ease;
+}
+
+.singers .singer img:hover{
+    cursor: pointer;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.3);
+    transform: translateY(-3px);
+}
+
+.singers .singer .singerName{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    background-color: rgb(211, 33, 33,0.5);
+    text-align: center;
+    padding: 0.5em 0;
+}
+/* main section */
+
+/* Tour */
+.bg-black{
+    background-color: #000;
+    padding: 6rem 0;
+}
+
+.Tour{
+    margin: 0 auto;
+}
+
+.mainContent{
+    margin: 0;
+}
+
+.Tourhead h1{
+    color: #fff;
+}
+
+.Tourhead .gray{
+    margin-bottom: 2rem;
+}
+
+.dates .date{
+    background: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    padding: 10px;
+    border-bottom: 1px solid gray;
+    color: gray;
+    width: 100%;
+}
+
+.dates .date span{
+    background-color: rgb(223, 13, 13);
+    color: #fff;
+    padding: 1px 4px;
+    font-size: 1rem;
+}
+
+.dates .date .circle{
+    background-color: #000;
+    padding: 1px 8px;
+    border-radius: 50%;
+    float: right;
+}
+
+.cards{
+    width:100%;
+    margin-top: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cards .card{
+    background-color: #fff;
+}
+
+.card2{
+    margin: 0 20px;
+}
+
+.cards .card img{
+    width:100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content{
+    padding: 1em;
+}
+
+.cards .card .card-title{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.card-date{
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.desc{
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.btn{
+    background-color: #000;
+    color: #fff;
+    padding: 8px 15px;
+    width: fit-content;
+    font-family: 'Open Sans', sans-serif;
+    transition: all .5s ease;
+}
+
+.btn:hover{
+    background-color: #eee;
+    cursor: pointer;
+    color: black;
+}
+/* Tour */
+
+/* Contact */
+.contactContent{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.address p{
+    font-weight: 500;
+    padding: 5px 0;
+}
+
+.form input{
+    padding: 10px;
+}
+
+.form .email{
+    margin-left: 10px;
+}
+
+.form .mess{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.btn-container{
+    width: 100%;
+    text-align: right;
+}
+
+.form .btn1{
+    margin-top: 15px;
+}
+
+.map{
+    width:100%;
+    margin-top: 20px;
+}
+
+.map iframe{
+    width: 100%;
+    height: 500px;
+}
+/* Contact */
+
+/* about */
+.about{
+    background-color: rgba(128, 128, 128, 0.424);
+    padding: 20px 0;
+}
+.about p{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-weight: 500;
+}
+/* about */
+/* footer */
+.footer{
+    background-color: #000;
+    padding: 20px;
+}
+
+.footer p{
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+/* footer */
+/* MEDIA QUERIES */
+
+@media screen and (max-width:968px) {
+    section{
+        width: 80%;
+    } 
+}
+
+@media screen and (max-width:768px){
+    .contactContent{
+        flex-direction: column;
+    }
+
+    .form{
+        margin-top: 20px;
+    }
+
+    .form input{
+        width : 100%;
+    }
+
+    .form .email, .form .mess{
+        margin: 10px 0;
+    }
+
+    .form .mess{
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width:678px){
+    header{
+        padding: 1.5em;
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 1.5em;
+        z-index: 100;
+        background-color: #000;
+    }
+    
+    header nav{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 80%;
+        height: 100vh;
+        background-color: rgba(0,0,0);
+        text-transform: uppercase;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in-out;
+        z-index: 100;
+    }
+    
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 200px;
+        height: 100vh;
+        z-index: 102;
+    }
+    
+    nav ul li a{
+        display: block;
+        color: #fff;
+        margin: 1em 0;
+        font-size: 1.3rem;
+    }
+    
+    .logo{
+        color: #fff;
+    }
+    
+    .menu, .close{
+        display: block;
+    }
+    
+    .close{
+        position: absolute;
+        top: 1em;
+        right: 1em;
+    }
+
+    .hero_container{
+        height: 50vh;
+    }
+
+    .hero_content img{
+        height: 50vh;
+    }
+
+    section{
+        width: 85%;
+        margin: 6rem auto;
+    }
+
+    .cards{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .card{
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    .map iframe{
+        height: 300px;
+    }
+
+}
+
+
+.open-nav{
+    transform: translateX(0);
+}
+
+

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<body lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="./style.css">
+    <title>The Band</title>
+</head>
+
+<body onload="myFunction()">
+    <!-- navigation -->
+    <div id="loading"></div>
+
+    <header>
+        <a href="#" class="logo">The <span>Band</span></a>
+        <nav class="nav-item">
+            <i class="fas fa-times close"></i>
+            <ul>
+                <li><a href="#" class="link">HOME</a></li>
+                <li><a href="#band" class="link">BAND</a></li>
+                <li><a href="#tour" class="link">TOUR</a></li>
+                <li><a href="#contact" class="link">CONTACT</a></li>
+            </ul>
+        </nav>
+        <i class="fas fa-bars menu"></i>
+    </header>
+    <!-- navigation -->
+
+    <!-- hero -->
+    <div class="hero_container">
+        <div class="hero_content">
+            <img src="./images/la.jpg" alt="los angles" id="hero_img">
+            <div class="content">
+                <p class="img_title" id="img_title">Los Angeles</p>
+                <p class="img_subtitle" id="img_subtitle">We had the best time playing at Venice Beach</p>
+            </div>
+        </div>
+    </div>
+    <!-- hero -->
+
+<!-- main section -->
+<section class="main" id="band">
+    <div class="mainContent" data-aos="fade-down">
+        <h1>THE BAND</h1>
+        <p class="gray"><i>We love music</i></p>
+        <p class="desc">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div class="singers">
+        <div class="singer" data-aos="fade-right">
+            <img src="./images/singer1.jpg" alt="Obafemi Moyosade">
+            <p class="singerName">Obafemi Moyosade</p>
+        </div>
+        <div class="singer" data-aos="fade-up">
+            <img src="./images/singer2.jpg" alt="Taylor Ron">
+            <p class="singerName">Taylor Ron</p>
+        </div>
+        <div class="singer" data-aos="fade-right">
+            <img src="./images/singer3.jpg" alt="Nate Johnston">
+            <p class="singerName">Nate Johnston</p>
+        </div>
+    </div>
+</section>
+<!-- main section -->
+
+<!-- Tour section -->
+<div class="bg-black" id="tour">
+<section class="main Tour" data-aos="fade-up">
+    <div class="mainContent Tourhead">
+        <h1>TOUR DATES</h1>
+        <p class="gray"><i>Remember to book your tickets!</i></p>
+    </div>
+    <div class="dates">
+        <p class="date">September <span>Sold Out</span></p>
+        <p class="date">October <span>Sold Out</span></p>
+        <p class="date">November <span class="circle">3</span></p>
+    </div>
+    <div class="cards">
+        <div class="card" data-aos="fade-right">
+            <img src="./images/card1.jpg" alt="New York">
+            <div class="card-content">
+                <p class="card-title">New York</p>
+                <p class="gray card-date">Fri 27 Nov 2016</p>
+                <p class="desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <p class="btn">Buy Tickets</p>
+            </div>
+        </div>
+        <div class="card card2" data-aos="fade-up">
+            <img src="./images/card2.jpg" alt="Paris">
+            <div class="card-content">
+                <p class="card-title">Paris</p>
+                <p class="gray card-date">Sat 28 Nov 2016</p>
+                <p class="desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <p class="btn">Buy Tickets</p>
+            </div>
+        </div>
+        <div class="card" data-aos="fade-right">
+            <img src="./images/card3.jpg" alt="San Francisco">
+            <div class="card-content">
+                <p class="card-title">San Francisco</p>
+                <p class="gray card-date">Sun 29 Nov 2016</p>
+                <p class="desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <p class="btn">Buy Tickets</p>
+            </div>
+        </div>
+    </div>
+</section>
+</div>
+<!-- Tour section -->
+
+<!-- contact -->
+<section class="contact" id="contact">
+    <div class="mainContent contacthead">
+        <h1>Contact</h1>
+        <p class="gray"><i>Fan? Drop a note!</i></p>
+    </div>
+    <div class="contactContent">
+        <div class="address">
+            <p><i class="fas fa-map-marker-alt"></i> Chicago, US</p>
+            <p><i class="fas fa-mobile-alt"></i> Phone: +91 1234567891</p>
+            <p><i class="fas fa-envelope"></i> Email: mail@rohitrk2112.com</p>
+        </div>
+        <div class="form">
+            <input type="text" name="name" class="name" placeholder="Name">
+            <input type="email" name="email" class="email" placeholder="Email">
+            <br>
+            <input type="text" name="mess" class="mess" placeholder="Message">
+            <div class="btn-container">
+            <p class="btn btn1">SEND</p>
+            </div>
+        </div>
+    </div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380510.67419016303!2d-88.01215569106046!3d41.83390416700217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c3cd0f4cbed%3A0xafe0a6ad09c0c000!2sChicago%2C%20IL%2C%20USA!5e0!3m2!1sen!2sin!4v1642320662082!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</section>
+<section class="about" data-aos="fade-up">
+    <p>This website was developed by <b>Rohit</b>, Who is currently pursuing B.TECH in Electronics and Communication Engineering <i>Reva University.</i></p>
+    <p>With the help of sample template that was published by <b>w3c</b>.</p>
+</section>
+<div class="footer">
+    <p>Copyright Issued &copy; 2022, All Rights Reserved</p>
+</div>
+<script src="./index.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        delay: 30,
+        duration : 1500,
+        once: true,
+        easing : 'ease'
+    });
+</script>
+</body>
+</html>
